@@ -1,0 +1,60 @@
+#Environment Variable
+
+echo $SHELL
+
+/bin/bash
+
+chsh
+-----------------------------------------------------
+Bash Shell Feature
+
+1. Bash Auto-Completion
+
+2. Environment Variable
+
+Checking Environment Variable using below cmd
+
+$ env
+
+How to Set env variable
+
+export OFFICE=Test
+
+OFFICE
+
+3. Path Variable
+
+$ echo $PATH
+
+/opt/swift/bin:/usr/local/bin/factor:/root/.sdkman/candidates/kotlin/current/bin:/usr/GNUstep/System/Tools:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/scriba/bin:/usr/local/smlnj/bin:/usr/local/bin/std:/usr/local/bin/extra:/usr/local/fantom/bin:/usr/local/dart/bin:/usr/libexec/sdcc:/usr/local/icon-v950/bin:/usr/local/mozart/bin:/opt/Pawn/bin:/opt/pash/Source/PashConsole/bin/Debug/:.:/root/.sdkman/candidates/kotlin/current/bin:/usr/bin:/sbin:/bin:/usr/local/julia/bin:.:/usr/local/fantom/bin
+
+which obs-studio
+
+obs-studio
+obs-studio: command not found
+
+export PATH=$PATH:/opt/obs/bin
+
+which
+/opt/obs/bin/obs-studio
+
+4. Bash Promt
+
+PS1="TEST"
+
+Promt starting with Test
+
+5. 
+
+Use export PROJECT=MERCURY
+and add the value to the .profile by running echo 'export PROJECT=MERCURY' >> /home/bob/.profile
+
+6. 
+
+Update Bob's prompt so that 
+it displays the date as per the format below:
+
+Example: [Wed Apr 22]bob@caleston-lp10:~$
+Make sure the change is made persistent.
+
+Run:PS1='[\d]\u@\h:\w$' and add this to the ~/.profile file echo 'PS1="[\d]\u@\h:\w$"' >> ~/.profile
